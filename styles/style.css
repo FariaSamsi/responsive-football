@@ -209,27 +209,47 @@ h1:hover{
     z-index: 1;
 }
 /* .................. Footer Style.................... */
-.bottom-section{
-    display: flexbox;
-    flex-direction: column;
-     justify-content: center;
-} 
+ .footer-section{
+     width: 484px;
+     height: 150;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 5px;
+    margin-left: 475px;
+    text-align: center;
+ }
+ .bottom-image{
+     margin: 0%;
+     padding: 0%;
+     width: 484px;
+    height: 110px;
+
+ }
+
 .bottom-image img{
         width: 484px;
         height: 110px;
 }
-.social-media{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+.icon{
+     display: grid;
+     grid-template-columns: 40px 40px 40px 40px;
+     column-gap: 3px;
      
  }
  .fab {
-     font-size:30px;
+     font-size: 40px;
      color: #0A0826;
 
  }
-       
+ .copyright{
+     font-size: 18px;
+     line-height: 24px;
+     font-weight: normal;
+ }
+       .far{
+           color: black;
+           font-size: 18px;
+       }
      
      
      
