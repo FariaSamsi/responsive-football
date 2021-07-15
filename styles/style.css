@@ -38,10 +38,13 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* Header Animation */
-h1:hover{
+/* Hover for only screens greater than 688px */
+ @media (min-width: 688px){
+     h1:hover{
     color: rgb(60, 190, 241);
     transform: scale(1.3);
     transition: color 3s ease, scale 3s ease;
+}
 }
 /* Styling The Clickable Button */
 .Top-button{
@@ -60,10 +63,14 @@ h1:hover{
 
 }
 /* Button Animation */
-.Top-button:hover{
+/* Hover for only screens greater than 688px */
+@media (min-width: 688px){
+    .Top-button:hover{
     transform: scale(1.08);
     transition: transform 0.2s linear;
 }
+}
+/* Styling the texts inside the button */
 .button{
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
@@ -74,7 +81,7 @@ h1:hover{
     text-decoration: none;
     text-align: center;
 }
-/* Styling The Icon */
+/* Styling The Arrow Icon */
 .fa-arrow-right{
     align-items: center;
     transform: scale(1.4,1.1);
@@ -87,15 +94,16 @@ h1:hover{
 .Top-image img{
     width: 556px;
     height: 456px;
-    /* margin-right: 743px; */
     margin-top: 135px;
     margin-right: 140px;
     margin-bottom: 86px;
 }
 /* Image animation */
-.Top-image:hover{
+@media (min-width: 688px){
+    .Top-image:hover{
     transform: scale(1.4);
     transition: transform 8s ease 0.2s;
+    }
 }
 /* .................................................................
                      Style Of Blog Section 
@@ -194,8 +202,10 @@ h1:hover{
            margin-top: 120px;
        }
        /* Tooltip text */
-       .youtube-video:hover .tooltiptext {
+       @media (min-width: 688px){
+           .youtube-video:hover .tooltiptext {
         visibility: visible;
+           }
       }
 .youtube-video .tooltiptext {
     visibility: hidden;
@@ -250,8 +260,78 @@ h1:hover{
            color: black;
            font-size: 18px;
        }
+       /* .............................................
+                    Responsive- Media Query              
+         ................................................   */
      
-     
+     /* ...........................................
+                     Mobile Devices                              
+     .............................................. */
+     @media only screen and (max-width:688px) {
+        .First-section{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%
+     }
+     .Title-container{
+         margin:0%
+         }
+         .header h1{
+             width: 90%;
+             font-size: 50px;
+         }
+         .Top-image img{
+             width: 80%;
+             margin-left: 5px;
+         }
+         .Top-image{
+             width: 100%;
+             margin: 0%;
+         }
+/* .............Blog Section Design........ */
+         .blog-section{
+             width: 90%
+             margin: 5px;
+             display: grid;
+            grid-template-columns:repeat(1, 1fr);
+            margin:0%;
+
+
+         }
+         .blog{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+         }
+         .thumbnail{
+            margin: 0%;
+            padding: 0%;
+        }
+        .thumbnail img{
+           width: 300px;
+           height: 256px;
+        }
+        .player-profile{
+            width: 100%;
+        }
+        /* ..........Bottom Section Design......... */
+        .bottom-section{
+            width: 100%;
+        }
+        .more-info{
+            display: flex;
+            flex-direction: row;
+        }
+         .info-title h2{
+             font-size: 35px;
+         }
+         .youtube-video{
+             width: 100%;
+         }
+         .footer-section{
+             width: 100%;
+
+    }
      
      
     
