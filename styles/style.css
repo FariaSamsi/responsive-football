@@ -53,10 +53,11 @@ h1:hover{
     text-align: center;
     background-color: #E02C6D;
     padding: 10px 24px;
-    text-align: center;
     border-radius: 5px;
     display: flexbox;
     justify-content: space-between;
+    align-items: center;
+
 }
 /* Button Animation */
 .Top-button:hover{
@@ -162,19 +163,23 @@ h1:hover{
                 bottom section design           
        ...................................................... */
        .bottom-section{
+         width: 1200px;
+        height: 600px;
         margin-left: 180px;
-        display: flex;
-        justify-content: space-between;
+        margin-right: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
        }
        .more-info{
         display: flex;
         flex-direction: column;
+        text-align: left;
        }
        .info-title h2{
            font-size: 46px;
            line-height: 55px;
            width: 466px;
-            height: 130px;
+           height: 130px;
             color: #0A0826;
        }
        .information p{
@@ -184,6 +189,9 @@ h1:hover{
            box-shadow: lavenderblush;
            overflow: scroll;
            overflow-x: hidden;
+       }
+       .youtube-video{
+           margin-top: 120px;
        }
        /* Tooltip text */
        .youtube-video:hover .tooltiptext {
@@ -200,7 +208,27 @@ h1:hover{
     position: absolute;
     z-index: 1;
 }
+/* .................. Footer Style.................... */
+.bottom-section{
+    display: flexbox;
+    flex-direction: column;
+     justify-content: center;
+} 
+.bottom-image img{
+        width: 484px;
+        height: 110px;
+}
+.social-media{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+ }
+ .fab {
+     font-size:30px;
+     color: #0A0826;
 
+ }
        
      
      
