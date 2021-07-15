@@ -93,3 +93,60 @@ h1:hover{
     transform: scale(1.4);
     transition: transform 8s ease 0.2s;
 }
+/* .................................................................
+                     Style Of Blog Section 
+     .............................................................*/
+    .blog-section{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid whitesmoke ;
+        border-radius: 5px;
+        box-shadow: 5px gray;
+
+    }
+    /* image styling */
+     .thumbnail{
+         margin: 15px;
+         padding: 0%;
+     }
+     .thumbnail img{
+        width: 300px;
+        height: 256px;
+     }
+     /* Player Name Styling */
+     h2{
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0%;
+     }
+     /* Player Details Styling */
+     .player-profile{
+        margin: 0px 15px 33px;
+        height: 154px;
+        width: 300px;
+        padding: 0%;
+     }
+
+     .player-details{
+         height: 104px;
+         width: 300px;
+         margin-top: 10px;
+         padding: 0%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        font-style: normal;
+    }
+     
+     
+     
+     
+    
+     
