@@ -11,10 +11,11 @@ body{
     grid-template-columns: repeat(2, 1fr);
     background-color: #2d25a0;
     column-gap: 102px;
-    width: 100%;
+    width: 1440px;
     height: 677px;
     margin-left: 0px;
     margin-top: 0px;
+    margin-right: 0%;
 
 }
 /* Styling The Title */
@@ -68,8 +69,10 @@ body{
 
 
 .Top-image img{
-    width: 556.01px;
-    height: 438px;
-    margin-right: -415.02px;
-    margin-top: 153px;
+    width: 556px;
+    height: 456px;
+    /* margin-right: 743px; */
+    margin-top: 135px;
+    margin-right: 140px;
+    margin-bottom: 86px;
 }
